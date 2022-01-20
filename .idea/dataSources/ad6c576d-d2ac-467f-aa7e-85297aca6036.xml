@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test01@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.3">
+    <root id="1"/>
+    <schema id="2" parent="1" name="test01">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="ancientry_ssm"/>
+    <schema id="4" parent="1" name="answer"/>
+    <schema id="5" parent="1" name="bank"/>
+    <schema id="6" parent="1" name="blog"/>
+    <schema id="7" parent="1" name="bupt_iot"/>
+    <schema id="8" parent="1" name="class"/>
+    <schema id="9" parent="1" name="db_animal_manage"/>
+    <schema id="10" parent="1" name="db_appointment_manage"/>
+    <schema id="11" parent="1" name="db_book_sys"/>
+    <schema id="12" parent="1" name="db_cai"/>
+    <schema id="13" parent="1" name="db_can"/>
+    <schema id="14" parent="1" name="db_car"/>
+    <schema id="15" parent="1" name="db_car_manage"/>
+    <schema id="16" parent="1" name="db_class_fee"/>
+    <schema id="17" parent="1" name="db_credit"/>
+    <schema id="18" parent="1" name="db_culture_manage"/>
+    <schema id="19" parent="1" name="db_flight"/>
+    <schema id="20" parent="1" name="db_health"/>
+    <schema id="21" parent="1" name="db_hospital"/>
+    <schema id="22" parent="1" name="db_logistics"/>
+    <schema id="23" parent="1" name="db_lost_property"/>
+    <schema id="24" parent="1" name="db_massage"/>
+    <schema id="25" parent="1" name="db_medicine"/>
+    <schema id="26" parent="1" name="db_medicine_manage"/>
+    <schema id="27" parent="1" name="db_mini_blog"/>
+    <schema id="28" parent="1" name="db_money"/>
+    <schema id="29" parent="1" name="db_money_manage"/>
+    <schema id="30" parent="1" name="db_online_ssm"/>
+    <schema id="31" parent="1" name="db_patient_manage"/>
+    <schema id="32" parent="1" name="db_police"/>
+    <schema id="33" parent="1" name="db_project2"/>
+    <schema id="34" parent="1" name="db_property_manage"/>
+    <schema id="35" parent="1" name="db_rent_manage"/>
+    <schema id="36" parent="1" name="db_shower_manage"/>
+    <schema id="37" parent="1" name="db_teach"/>
+    <schema id="38" parent="1" name="db_teacher"/>
+    <schema id="39" parent="1" name="db_test"/>
+    <schema id="40" parent="1" name="db_test_blog"/>
+    <schema id="41" parent="1" name="db_train"/>
+    <schema id="42" parent="1" name="db_vote_manage"/>
+    <schema id="43" parent="1" name="db_work"/>
+    <schema id="44" parent="1" name="demo"/>
+    <schema id="45" parent="1" name="drqy"/>
+    <schema id="46" parent="1" name="employee"/>
+    <schema id="47" parent="1" name="eshop"/>
+    <schema id="48" parent="1" name="exdb"/>
+    <schema id="49" parent="1" name="flower_shop"/>
+    <schema id="50" parent="1" name="hospital"/>
+    <schema id="51" parent="1" name="hotel"/>
+    <schema id="52" parent="1" name="information_schema"/>
+    <schema id="53" parent="1" name="job"/>
+    <schema id="54" parent="1" name="market"/>
+    <schema id="55" parent="1" name="meeting"/>
+    <schema id="56" parent="1" name="myblog"/>
+    <schema id="57" parent="1" name="mysql"/>
+    <schema id="58" parent="1" name="oa"/>
+    <schema id="59" parent="1" name="oamanager"/>
+    <schema id="60" parent="1" name="parking"/>
+    <schema id="61" parent="1" name="patent"/>
+    <schema id="62" parent="1" name="performance_schema"/>
+    <schema id="63" parent="1" name="pratice_selection_system"/>
+    <schema id="64" parent="1" name="school"/>
+    <schema id="65" parent="1" name="shici"/>
+    <schema id="66" parent="1" name="shiro"/>
+    <schema id="67" parent="1" name="shopping_cart"/>
+    <schema id="68" parent="1" name="smart"/>
+    <schema id="69" parent="1" name="springboot_shiro"/>
+    <schema id="70" parent="1" name="store"/>
+    <schema id="71" parent="1" name="studentmanager"/>
+    <schema id="72" parent="1" name="sys_test"/>
+    <schema id="73" parent="1" name="tmall"/>
+    <schema id="74" parent="1" name="tmall_springboot"/>
+    <schema id="75" parent="1" name="tmall_ssm"/>
+    <schema id="76" parent="1" name="toutiao"/>
+    <schema id="77" parent="1" name="tran"/>
+    <schema id="78" parent="1" name="trip_web_db"/>
+    <schema id="79" parent="1" name="zu"/>
+    <table id="80" parent="2" name="user"/>
+    <column id="81" parent="80" name="Id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="82" parent="80" name="username">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="83" parent="80" name="address">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="84" parent="80" name="favorites">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="85" parent="80" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
