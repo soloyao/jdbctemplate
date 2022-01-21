@@ -22,12 +22,14 @@ import java.util.List;
  */
 public class JdbcTest {
     JdbcTemplate jdbcTemplate;
+    private AccountService accountService;
 
     @Before
     public void before() {
 //        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(JavaConfig.class);
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
         jdbcTemplate = ctx.getBean(JdbcTemplate.class);
+        accountService = ctx.getBean(AccountService.class);
     }
 
     @Test
@@ -50,4 +52,10 @@ public class JdbcTest {
         List<User> list = jdbcTemplate.query("select * from user", new BeanPropertyRowMapper<User>(User.class));
         System.out.println("list = " + list);
     }
+
+    @Test
+    public void test5() {
+        accountService.updateMoney();
+    }
+
 }

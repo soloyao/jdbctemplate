@@ -1,6 +1,7 @@
 package com.zmy.jdbc;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -15,6 +16,7 @@ import javax.sql.DataSource;
  * @Date: Created in 22:12 2022/1/20
  */
 @Configuration
+@ComponentScan
 public class JavaConfig {
     @Bean
     DataSource dataSource() {
